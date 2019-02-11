@@ -13,7 +13,6 @@ namespace PooVueling.NunitV.Integration.Tests
 
         [TestCase(4, 4, 1)]
         [TestCase(9, 3, 3)]
-        [TestCase(9, 0, 0)]
         public void DivisionTest(int num1, int num2, int resultado)
         {
             Assert.AreEqual(iCalculadora.Division(num1, num2),resultado);

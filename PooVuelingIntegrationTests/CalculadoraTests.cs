@@ -40,7 +40,6 @@ namespace PooVueling.Tests
 
         [DataRow(4, 4, 1)]
         [DataRow(9, 3, 3)]
-        [DataRow(9, 0, 0)]
         [DataTestMethod]
         public void DivisionTest(int num1, int num2, int resultado)
         {
