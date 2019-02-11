@@ -8,10 +8,12 @@ namespace PooVueling
 {
     class Program
     {
-        static void Main(string[] args)
+         
+        public static void Main(string[] args)
         {
+
             Calculadora calc = new Calculadora();
-            System.Diagnostics.Debug.Write(calc.Multiplicacion(6,3));
+            calc.Division(4,0);
         }
     }
 }

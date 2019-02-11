@@ -9,7 +9,7 @@ namespace PooVueling.NunitV.Integration.Tests
 {
     public class CalculadoraTest
     {
-        ICalculadora iCalculadora = new Calculadora();
+        private ICalculadora iCalculadora = new Calculadora();
 
         [TestCase(4, 4, 1)]
         [TestCase(9, 3, 3)]
