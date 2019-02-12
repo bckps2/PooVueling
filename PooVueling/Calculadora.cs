@@ -10,6 +10,7 @@ namespace PooVueling
     public class Calculadora : ICalculadora, ICloneable
     {
         public static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        public static readonly log4net.ILog log1 = log4net.LogManager.GetLogger(typeof(Calculadora));
         public object Clone()
         {
             throw new NotImplementedException("The method is not implemented yet");
@@ -24,6 +25,7 @@ namespace PooVueling
             catch (DivideByZeroException e)
             {
                 log.Warn(e.Message);
+                Console.ReadLine();
                 throw;
             }
         }
