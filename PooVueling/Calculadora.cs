@@ -24,7 +24,7 @@ namespace PooVueling
             }
             catch (DivideByZeroException e)
             {
-                log.Warn(e.Message);
+                log1.Warn(e.Message);
                 Console.ReadLine();
                 throw;
             }
